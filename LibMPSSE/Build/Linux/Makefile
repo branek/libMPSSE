@@ -37,8 +37,7 @@ CFLAGS= -O3 -Wall $(MACROS) $(ALL_INC_DIR)
 
 #with profiling & coverage
 #CFLAGS=  -g -O0 -Wall -fprofile-arcs -ftest-coverage D$(MACROS) $(ALL_INC_DIR)
-
-#OBJECTS= ftdi_infra.o ftdi_mid.o ftdi_i2c.o 
+ 
 OBJECTS= ftdi_infra.o ftdi_mid.o ftdi_spi.o ftdi_i2c.o
 
 LIBS = -L /MinGW/lib -ldl
@@ -69,3 +68,4 @@ clean :
 	rm *.i *.o *.exe *.bak *.txt *.dll *.so *.a
 
 
+	
